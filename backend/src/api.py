@@ -133,8 +133,6 @@ def update_drink(payload, id):
             if drink_recipe != None:
                 drink.recipe = json.dumps(body['drink_recipe'])
 
-            print(drink.recipe)
-
             drink.update()
 
             drinks = [drink.long()]
